@@ -1,9 +1,9 @@
 ## Indice de contenidos
 
 * [Leeme](/README.md)
-* [Introducción](/docs/introduction/README.md)
-  * [Motivación](/docs/introduction/Motivation.md)
-  * [Tres Principios](/docs/introduction/ThreePrinciples.md)
-  * [Predecesores](/docs/introduction/PriorArt.md)
-  * [Ecosistema](/docs/introduction/Ecosystem.md)
-  * [Ejemplos](/docs/introduction/Examples.md)
+* [Introducción](introduction/README.md)
+  * [Motivación](introduction/Motivation.md)
+  * [Tres Principios](introduction/ThreePrinciples.md)
+  * [Predecesores](introduction/PriorArt.md)
+  * [Ecosistema](introduction/Ecosystem.md)
+  * [Ejemplos](introduction/Examples.md)
