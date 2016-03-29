@@ -1,12 +1,12 @@
 # Tres Principios
 
-Redux se puede describir por medio de tres principios fundamentales: 
+Redux se puede describir por medio de tres principios fundamentales:
 
-### Una única funte de la verdad
+### Una única fuente de la verdad
 
-**El [estado](../Glosary.md#state) completo de la aplicación se almacena en un objeto dentro de un solo [store(depósito)](../Glossary.md#store).**
+**El [estado](../Glosary.md#state) completo de la aplicación se almacena en un objeto dentro de un solo [depósito (store)](../Glossary.md#store).**
 
-Esto simplifica la creación de aplicaciones universales, ya que el estado puede serializarse e hidratarse desde el servidor al cliente sin esfuerzo extra. Un árbol u objecto de estado único también facilita la depuración o la introspección de la aplicación; además permite persistir el estado de tu aplicación en desarrollo, acelerando el ciclo de desarrollo. Incluso algunas funcionalidades que tradicionalmente han sido difíciles de implementar - Hacer/Deshacer, por ejemplo - se vuelven tribiales sus implementaciones si todo tu estado está almacenado en un sólo árbol(objecto).
+Esto simplifica la creación de aplicaciones universales, ya que el estado puede serializarse e hidratarse desde el servidor al cliente sin esfuerzo extra. Un árbol u objecto de estado único también facilita la depuración o la introspección de la aplicación; además permite persistir el estado de la aplicación en desarrollo, acelerando el ciclo de desarrollo. Incluso algunas funcionalidades que tradicionalmente han sido difíciles de implementar - Hacer/Deshacer, por ejemplo - se vuelven tribiales sus implementaciones si todo el estado está almacenado en un sólo árbol (objecto).
 
 ```js
 console.log(store.getState())
@@ -50,7 +50,7 @@ store.dispatch({
 
 **Para especificar como el árbol de estado es transformado por las acciones, se escriben [reductores](../Glossary.md#reducer) puros.**
 
-Los reductores son simples funciones puras que toman como argumentos el estado previo y la acción, y retornan un nuevo estado. Teniendo en cuenta que se devuelve un objeto con el nuevo estado, en vez de mutar el estado previo. Se puede empezar con un sólo reductor, y mientras la aplicación crece, se pueden dividir en pequeños reductores que controlan partes específicas del árbol de estado. Debido a que los reductores son solo funciones, se puede controlar el orden en el que se llaman, pasarles datos adicionales, o incluso reutilizarlos para tareas comunes como la paginación.
+Los reductores son simples funciones puras que toman como argumentos el estado previo y la acción, y retornan un nuevo estado. Teniendo en cuenta que se devuelve un objeto con el nuevo estado, en vez de mutar el estado previo. Se puede empezar con un sólo reductor, y mientras la aplicación crece, se pueden dividir en pequeños reductores que controlan partes específicas del árbol de estado. Debido a que los reductores son sólo funciones, se puede controlar el orden en el que se llaman, pasarles datos adicionales, o incluso reutilizarlos para tareas comunes como la paginación.
 
 ```js
 
@@ -92,4 +92,4 @@ let reducer = combineReducers({ visibilityFilter, todos })
 let store = createStore(reducer)
 ```
 
-Y así ya Ud sabe de que se trata Redux!
+Y así ya Ud sabe de qué se trata Redux!
