@@ -1,6 +1,6 @@
 # Motivación
 
-Como los requerimientos de las aplicaciones de una sola página (SPA) hechas en Javascript son cada vez más complicados, **nuestro código debe manejar más estado que nunca**. Este estado puede incluir respuestas del servidor y datos cacheados, así como datos creados localmente todavía sin persistir en el servidor. Incluso el estado de las IU aumentan en complejidad, ya que necesitamos lidiar con la ruta activa, el tab seleccionado, si mostrar un indicador de progreso o no, si los controles de paginación están visibles, y más.
+Como los requerimientos de las aplicaciones de una sola página (SPA) hechas en Javascript son cada vez más complicados, **nuestro código debe manejar más estado que nunca**. Dicho estado puede incluir respuestas del servidor y datos cacheados, así como datos locales todavía sin persistir en el servidor. Incluso el estado de las IU aumentan en complejidad, ya que necesitamos lidiar con la ruta activa, el tab seleccionado, si mostrar un indicador de progreso o no, si los controles de paginación están visibles, y más.
 
 Controlar este siempre cambiante estado es difícil. Si un modelo puede actualizar otro modelo, entonces una vista puede actualizar un modelo, y este a la vez actualiza otro modelo que podría provocar que otra vista se actualice, en algún momento dejarás de entender qué pasa en tu aplicación, como habrás **perdido control sobre el cuándo, por qué y cómo de su estado.** Cuando un sistema es opaco y no determinista es difícil reproducir bugs o agregar nuevas funcionalidades.
 
